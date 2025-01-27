@@ -18,13 +18,13 @@ import pytesseract
 from PIL import Image
 
 # Initialize Google Generative AI
-API_KEY = 'AIzaSyB1kneFazjmvCCbUSH6HnEaXPhR6lMUNXA'
+API_KEY = 'your API key'
 ai.configure(api_key=API_KEY)
 model = ai.GenerativeModel("gemini-pro")
 chat = model.start_chat()
 
 # Initialize Tesseract OCR path
-tess_exe_path = r'C:\Users\admin\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+tess_exe_path = r'Tesseract-OCR\tesseract.exe'
 pytesseract.pytesseract.tesseract_cmd = tess_exe_path
 
 # Initialize text-to-speech engine
